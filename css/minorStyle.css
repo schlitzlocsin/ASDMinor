@@ -1,0 +1,285 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #18bc9c; 
+}
+
+/*Global*/
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden; 
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+
+}
+
+
+/*Header*/
+header {
+	background: #2c3e50;
+	color: #f4f4f4;
+	padding-top: 30px;
+	min-height: 40px;
+    max-height: 200px;
+	
+}
+
+
+header #branding{
+	float: left;
+}
+
+header #branding h1{
+	font-family:'Montserrat', san-serif;
+	border-bottom: 1.5px solid #f4f4f4;
+    text-transform: uppercase;
+	font-size:20px;
+	font-weight:bold;
+	position: absolute;
+	margin: 0;
+	top: 15px;
+    left: 170px;
+
+}
+
+header #branding h2{
+	font-family:'Lato', san-serif;
+	font-weight: lighter;
+	font-size:13.5px;
+	position: absolute;
+	margin: 0;
+	top: 45px;
+    left: 188px;
+
+}
+
+
+
+.logo { position:absolute;
+    top: 10px;
+    left: 100px;
+    
+}
+
+
+/*login*/
+.loginBox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	min-height: 200px;
+	background:#f4f4f4;
+	border-radius: 10px;
+	padding: 40px;
+	box-sizing: border-box;
+
+}
+
+.user {
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.loginBox h3 {
+	margin: 0;
+	padding: 0 0 20px;
+	color: #2c3e50;
+	font-family:'Lato', san-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.loginBox input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginBox input[type="text"],
+.loginBox input[type="password"]
+{
+	 border: none;
+	 border-bottom: 2px solid #2c3e50;
+	 outline: none;
+	 height: 35px;
+	 color: #2c3e50;
+	 background: transparent;
+	 font-size: 16px;
+	 padding-left: 20px;
+	 box-sizing: border-box;
+
+}
+
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus
+{
+	border-bottom: 2px solid #18bc9c; 
+}
+
+.inputBox {
+	position: relative;
+}
+
+.inputBox span {
+	position: absolute;
+	top:10px;
+	color: #262626;
+}
+
+
+.loginBox input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	font-size: 16px;
+	background: #18bc9c;
+	color:#f4f4f4;
+	border-radius: 20px;
+	cursor: pointer;
+
+}
+
+/*Slide-Out Nav*/
+
+.fa-times{
+	right: 10px;
+	top: 10px;
+	opacity: 0.7;
+	cursor: pointer;
+	position: absolute;
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+
+.fa-times:hover{
+	opacity: 1;
+}
+
+.sidebar_menu{
+	position: fixed;
+	width: 250px;
+	margin-left: 0px;
+	overflow: hidden;
+	height: 100vh;
+	max-height: 100vh;
+	background-color: rgba(44, 62, 80, 0.9);
+	opacity: 0.9;
+	transition: all 0.3s ease-in-out;
+}
+
+.hide_menu{
+	margin-left: -250px;
+	transition: all 0.3s ease-in-out;
+}
+
+.toggle_menu{
+	position: fixed;
+	padding: 15px 20px 15px 15px;
+	margin-top: -65px;
+	color: white;
+	cursor: pointer;
+	background-color: #2c3e50;
+	opacity: 0;
+	z-index: 10000;
+	font-size: 2em; 
+	transition: all 0.2s ease-in-out;
+}
+
+.opacity_one{
+	opacity: 1;
+	transition: all 0.2s ease-in-out;
+}
+
+.toggle_menu:hover{
+	color: #18bc9c;
+	transition: all 0.2s ease-in-out;
+}
+
+
+
+
+.menu_close{
+	color: #D8D8D8;
+	position: absolute;
+	right: 8px;
+	opacity: 0.7;
+	top: 6px;
+	font-size: 1.1em;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.menu_close:hover{
+	color: #FE4365;
+	opacity: 1;
+	transition: all 0.2s ease-in-out;
+}
+
+.navigation_section{
+	margin: 20px 0;
+	display: block;
+	width: 200px;
+	margin-left: 25px;
+}
+
+.navigation_item{
+	font-weight: 200;
+	font-family: 'Open Sans';
+	color: white;
+	padding: 12px 0px;
+	box-sizing: border-box; 
+	font-size: 18px;
+	color: #D8D8D8;
+	border-bottom: solid 1px #D8D8D8;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+}
+
+.navigation_item:hover{
+	color: white;
+	transition: all 0.3s ease-in-out;
+}
+
+
+.boxed_item{
+	font-family: 'Open Sans';
+	font-weight: 200;
+	padding: 10px 20px;
+	display: inline-block;
+	border: solid 2px white;
+	box-sizing: border-box;
+	font-size: 10px;
+	color: white;
+	text-align: center;
+	margin-top: 70px;
+}
+
+.boxed_item_smaller{
+	font-size: 12px;
+	color: #D8D8D8;
+	width: 200px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	border-width: 1px;
+	margin: 0 0 20px 0;
+}
+
+.boxed_item_smaller:hover{
+	background-color: white;
+	color: #111;
+	transition: all 0.3s ease-in-out;
+}
