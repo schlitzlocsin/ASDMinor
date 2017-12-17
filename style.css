@@ -1,0 +1,94 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #435d76;
+	font-family: sans-serif;: 
+}
+
+.container {
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	width: 700px;
+	height: 420px;
+	border-radius: 5px; 
+	border: 10px solid rgba(255,255,255, .2);
+	box-shadow: 10px 10px 15px rgba(0,0,0,.5);
+
+}
+
+.imgBx {
+	width: 350px;
+	height: 420px;
+	overflow: hidden;
+	float: left;
+	background-color: #f4f4f4;
+
+}
+.imgBx img {
+	 width:100%;  
+}
+
+.loginBox
+{
+	float: right;
+	width: 350px;
+	height: 420px;
+	box-sizing: border-box;
+	padding-bottom: 80px 40px;
+	background: #f4f4f4;
+}
+
+.loginBox h3 {
+	margin-top: 15px;
+	padding: 0 0 20px;
+	color: #435d76;
+	font-family:'Lato', san-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.loginBox input {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]{
+	border: none;
+	border-bottom: 2.4px solid #e36f24; 
+	outline: none;
+	height: 40px;
+	color: #264059;
+	background-color: #f4f4f4
+	font-size: 16px;
+	padding-left: 40px;
+	box-sizing: border-box;
+}
+
+::placeholder {
+	color: rgba(0,0,0,.5);
+}
+
+.inputBox {
+	position: relative;
+}
+
+.inputBox span {
+	position: absolute;
+	top: 10px;
+	color: #264059;
+
+}
+
+.loginBox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	font-size: 16px;
+	background: #839429;
+	color: #f4f4f4;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
